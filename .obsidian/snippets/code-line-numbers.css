@@ -1,0 +1,21 @@
+/* 备选：使用相对定位而非 flex */
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-codeblock {
+    counter-increment: line;
+    position: relative;
+    padding-left: 2.8em;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-codeblock::before {
+    content: counter(line);
+    position: absolute;
+    left: 0;
+    width: 1.8em;
+    text-align: right;
+    color: var(--text-faint);
+    user-select: none;
+}
+
+/* 每个代码块重置行号计数器 */
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-codeblock-begin {
+    counter-reset: line;
+}
