@@ -1,6 +1,7 @@
-[[数论]]
+[[_数论]]
 
-迭代形式 $O\left(nlogn\right)$：
+迭代形式 $O\left(n\log n\right)$：
+和其功能几乎相同的：[[NTT快速数论变换]]
 ```cpp
 const double PI=acos(-1.0);
 using Complex=complex<double>;
@@ -35,7 +36,8 @@ inl void FFT(vector<Complex>& c, bool inv){
 }
 ```
 
-调用其进行大数乘法（将进位和去除前导零注释掉即为多项式乘法）：
+## 调用其进行大数乘法
+（将进位和去除前导零注释掉即为多项式乘法）：
 （进行大数乘法时支持压位，精度在大数位数较大时仍能保持）
 ```cpp
 static vector<Complex> c1,c2; // 用static复用空间

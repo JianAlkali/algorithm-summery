@@ -1,8 +1,8 @@
-[[图论]]
+[[_图论]]
 
 寻找一条代价最小的回路。复杂度$O\left(n^{2}⋅2^{n}\right)$。
-此处展示非标准的TSP：$n$个点，有点权$val$，有选择点数上限$m$个，求最长路径。
-最短路径仅需改max为min。无点权仅需将所有val删掉。无选择点数量上限仅需将m改成n。
+此处展示非标准的`TSP`：`n`个点，有点权`val`，有选择点数上限`m`个，求最长路径。
+最短路径仅需改`max`为`min`。无点权仅需将所有`val`删掉。无选择点数量上限仅需将`m`改成`n`。
 ```cpp
 constexpr ll K=18;
 int dp[(1<<K)][K];
@@ -33,9 +33,7 @@ void solve(){
             cin>>g[i][j];
         }
     }
-```
 
-```cpp
     for(int cnt=2;cnt<=m;cnt++){ // 枚举点数量
         for(int mask=(1<<cnt)-1, ed=(1<<n); mask<ed; mask=gos(mask)){
             for(int last=0;last<n;last++){ // 枚举最后一个点

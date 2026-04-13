@@ -1,6 +1,6 @@
-[[其他技巧&我的小东西]]
+[[_其他技巧&我的小东西]]
 
-一个方便的小技巧，减小常数。同时，提供deque所不支持的随机访问，这在维护斜率等要用到多个点值的情况下很有用。有begin、end则也支持stl，操作等同于c数组，如 auto it=lower_bound(all(q)-1,tar,greater<>()) 、for(auto& a:q){…}。这里给出<pii>的实现
+一个方便的小技巧，减小常数。同时，提供`deque`所不支持的随机访问，这在维护斜率等要用到多个点值的情况下很有用。有`begin`、`end`则也支持`STL`，操作等同于`c数组`，如 `auto it=lower_bound(all(q)-1,tar,greater<>())` 、`for(auto& a:q){…}`。这里给出`<pii>`的实现
 ```cpp
 // array模拟允许随机访问的双端队列
 struct Deq{

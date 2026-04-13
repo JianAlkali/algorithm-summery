@@ -1,7 +1,7 @@
-[[数论]]
+[[_数论]]
 
-$O\left(M+logMOD\right)$：
-lucas_Cnm是对于$C_{n}^{m}$的n、m大于模数的时候的使用方案，此时$Cnm$失效。
+$O\left(M+\log MOD\right)$：
+`lucas_Cnm`是对于$C_{n}^{m}$的`n`、`m`大于模数的时候的使用方案，此时`Cnm`失效。
 ```cpp
 array<int,MOD> fa,vfa;
 inl void init(){
@@ -16,19 +16,11 @@ inline int Cnm(int n,int m){ //O(1)
     return fa[n]*vfa[n-m]%MOD*vfa[m]%MOD;
 }
 //将n、m看成MOD进制数，提取他们的每一位进行Cnm，其结果之积即为模MOD意义下的结果
-inl int lucas_Cnm(int n,int m){ //$O(log_{MOD}(max(n,m)))$
-    int res=1;
-    while(n||m){
-        int na=n%MOD,ma=m%MOD;
-        if(ma>na) return 0; //0*anything == 0
-        res=res*Cnm(na,ma)%MOD;
-        n/=MOD; m/=MOD;
-    }
-    return res;
+inl int lucas_Cnm(int n,int m){
+	if(m==0) return 1;
+	return lucas_Cnm(n/MOD,m/MOD) * Cnm(n%MOD,m%MOD) % MOD;
 }
-```
 
-```cpp
 inl void mul(vector<int> a,vector<int> b, vector<int>& res){
     int alen=a.size(), blen=b.size(), clen=1;
     while(clen < alen+blen) clen<<=1;

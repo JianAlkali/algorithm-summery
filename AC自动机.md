@@ -1,6 +1,6 @@
-[[动态规划]]
+[[_动态规划]]
 
-AC自动机是KMP+Trie树的结合体。它相当于允许多个模版串的KMP。复杂度：$O\left(S+\sum_{}^{} T_{i}\right)$。其有统计位置和不统计位置的写法。统计位置并不会增加内部复杂度，但最坏情况下输出的pos数量会达到平方级，当然OJ卡这个是不可能的，否则直接打表都过不了。
+**`AC自动机`** 是`KMP`+`Trie树`的结合体。它相当于允许多个模版串的`KMP`。复杂度：$O\left(S+\sum_{}^{} T_{i}\right)$。其有统计位置和不统计位置的写法。统计位置并不会增加内部复杂度，但最坏情况下输出的`pos`数量会达到平方级，当然OJ卡这个是不可能的，否则直接打表都过不了。
 不统计位置的写法：
 ```cpp
 const int LOW=-'a', HI=-'A'+26, DIG=-'0'+26+26, C=26+26+10;
@@ -28,9 +28,7 @@ struct AC{
             id2str[i].clear();
         tcnt=idcnt=scnt=0;
     }
-```
 
-```cpp
     void add(const string& s){
         int now=0, n=s.size();
         for(int i=0;i<n;i++){
@@ -64,9 +62,7 @@ struct AC{
             }
         }
 }
-```
 
-```cpp
     vi query(const string& s){
         vi tres(tcnt+1), idres(idcnt+1), res(scnt+1); // 1based
         int now=0;

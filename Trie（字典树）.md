@@ -1,4 +1,4 @@
-[[动态规划]]
+[[_动态规划]]
 
 字典树是也是一种数据结构，经考虑，还是把它和[[KMP]]等一起放在动态规划里。
 它是一个种以一种通过树状结构，高效匹配查询串和模版串，以获取查询串匹配的前缀数量或结尾数量的方法。插入$O\left(n\right)$，查询$O\left(n\right)$。
@@ -32,9 +32,7 @@ int tcnt=0;
         }
         t[now].ed++;
     }
-```
 
-```cpp
     int querypre(const string& s){
         int now=0;
         for(char c:s){

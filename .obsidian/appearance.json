@@ -1,5 +1,7 @@
 {
   "enabledCssSnippets": [
     "code-line-numbers"
-  ]
+  ],
+  "accentColor": "",
+  "theme": "obsidian"
 }

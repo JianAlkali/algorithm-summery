@@ -1,6 +1,6 @@
-[[图论]]
+[[_图论]]
 
-$log\left(n\right)$的，带代价（带cost的跳还有一种写法：dist[u]代表从u到根的代价）
+$\log \left(n\right)$的，带代价（带`cost`的跳还有一种写法：`dist[u]`代表从`u`到根的代价）
 ```cpp
 struct E{
     int v,w,nxt;
@@ -37,9 +37,7 @@ inl void solve(){
         }
     };
     dfs(dfs,1,0);
-```
 
-```cpp
     auto lca=[&](int x, int y){
         if(dep[x]<dep[y]) swap(x,y); //then dep[x]大
         int res=0, dif=dep[x]-dep[y];
@@ -62,6 +60,6 @@ inl void solve(){
         cin>>u>>v;
         auto [fafa, coco]=lca(u,v);
         cout<<fafa<<' '<<coco<<'\n';
-}
+	}
 }
 ```

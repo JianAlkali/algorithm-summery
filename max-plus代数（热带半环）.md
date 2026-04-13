@@ -1,9 +1,9 @@
-[[数论]]
+[[_数论]]
 
 是一种代数系统，有$+ ×$操作（下称此代数下的加乘为$⊕ ⊗$
-$a⊕b=max\left(a,b\right)$，$a ⊗b =a+b$，零元素=$-∞$，单位元素=0。
-如果一个算式的转移满足这种形式（如算节点n很少的图，很大的r轮后的最长路径），则可用该代数意义下的矩阵快速幂优化$O\left(n^{2}⋅r\right)→O\left(n^{3}⋅logr\right)$。
-一个事实是图论floyd其实是min-plus（$a⊕b=min\left(a,b\right)$，$a⊗b =a+b$）。
+$a⊕b=max\left(a,b\right)$，$a ⊗b =a+b$，`零元素`=$-∞$，`单位元素`=`0`。
+如果一个算式的转移满足这种形式（如算节点`n`很少的图，很大的`r`轮后的最长路径），则可用该代数意义下的矩阵快速幂优化$O\left(n^{2}⋅r\right)→O\left(n^{3}⋅\log r\right)$。
+一个对刚接触的人来说有趣事实是，图论的`floyd`其实是`min-plus代数`下的矩阵乘法（$a⊕b=min\left(a,b\right)$，$a⊗b =a+b$）。
 ```cpp
 using Mat=array<array<int,M>,M>;
 Mat add(Mat& a,Mat& b,int m=M){ // r=a+b (m*m矩阵)

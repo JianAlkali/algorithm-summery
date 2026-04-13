@@ -1,6 +1,6 @@
-[[数论]]
+[[_数论]]
 
-原理和FFT类似，虽然没有了FFT的较慢的浮点计算，但我在luogu上测试其的时间常数和FFT差别不大
+原理和[[FFT快速傅里叶变换]]类似，虽然没有了`FFT`的较慢的浮点计算，但我在luogu上测试其的时间常数和`FFT`差别不大
 ```cpp
 inl void NTT(vector<int>& c, bool inv){
     int n=c.size();

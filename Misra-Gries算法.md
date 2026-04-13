@@ -1,7 +1,8 @@
-[[动态规划]]
+[[_动态规划]]
 
 该算法用于查询频次大于某个比例的元素。普通版本：可动态添加元素、查询整个区间；线段树版本：不支持动态修改，支持任意区间查询。与莫队相比，它的普通版本可以动态添加元素，边查边改。可能误报，但不会漏报，需要搭配二分验证。
-普通版本我没写过，这里给个AI的：process $O\left(K\right)$，query $O\left(K+ n\right)$
+## 普通版本
+我没写过，这里给个AI的：`process` $O\left(K\right)$，`query` $O\left(K+ n\right)$
 ```cpp
 class TrafficMonitor {
     unordered_map<string, int> counters;  // IP -> 计数
@@ -38,7 +39,8 @@ class TrafficMonitor {
 };
 ```
 
-线段树版本： 构造 $O\left(n⋅ n⋅K^{2}\right)$, 查询 $O\left( n⋅K^{2}\right)$
+## 线段树版本
+构造 $O\left(n⋅ n⋅K^{2}\right)$, 查询 $O\left( n⋅K^{2}\right)$
 ```cpp
 constexpr int K=2; // 要寻找的频次K再-1，比如寻找频次>len/3的元素，K取2
 #define ls(x) ((x)<<1)
@@ -79,9 +81,7 @@ struct Seg{
                 break;
             }
         }
-```
 
-```cpp
         for(int i=0;i<K;i++){
             x[i].first-=mi;
         }

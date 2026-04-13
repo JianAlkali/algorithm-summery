@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "边双联通分量_桥(割边).md",
+                "file": "__目录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "边双联通分量_桥(割边)"
+              "title": "__目录"
+            }
+          },
+          {
+            "id": "950262fb1b0536c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_标准模版.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_标准模版"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -210,23 +224,35 @@
       "bases:新建数据库": false
     }
   },
-  "active": "75a0a95d6e8b1b7c",
+  "active": "950262fb1b0536c7",
   "lastOpenFiles": [
-    "A算法模版（停止在此更新）.docx",
-    "（质）因数分解.md",
-    "_目录.md",
-    "操作迭代器.md",
-    "STL.md",
+    "__目录.md",
+    "TSP.md",
+    "Trie（字典树）.md",
+    "NTT快速数论变换.md",
+    "MODi64.md",
+    "Misra-Gries算法.md",
+    "exgcd(扩展欧几里得).md",
+    "FFT快速傅里叶变换.md",
+    "Dinic求网络流.md",
+    "max-plus代数（热带半环）.md",
+    "Manacher.md",
+    "LCA.md",
+    "KMP.md",
+    "Johnson全源有负权最短路.md",
+    "bitset.md",
+    "array模拟双端队列.md",
+    "AC自动机.md",
+    "最小次小.md",
+    "最短路のDij&Bell&SPFA&Floyd&John概述.md",
+    "中国剩余定理(CRT).md",
+    "_数论.md",
     "一些方便的库函数.md",
-    "动态规划.md",
+    "许多小定理.md",
+    "线性逆元&Lucas.md",
+    "线段树.md",
     "位运算枚举技巧.md",
-    "带权最长递增子序列.md",
-    "前缀容量约束最大子集问题.md",
-    "类型.md",
-    "数据结构.md",
-    "数论.md",
-    "边双联通分量_桥(割边).md",
-    "A算法模版.docx",
-    "欢迎.md"
+    "A算法模版（停止在此更新）.docx",
+    "A算法模版.docx"
   ]
 }

@@ -1,4 +1,4 @@
-[[其他技巧&我的小东西]]
+[[_其他技巧&我的小东西]]
 
 实现内部模意义下运算
 ```cpp
@@ -37,9 +37,7 @@ i64 v;
     MODi64 operator-() const {
         return MODi64(v ? MOD - v : 0);
     }
-```
 
-```cpp
     // 扩展欧几里得求逆
     static i64 exgcd(i64 a, i64 b, i64& x, i64& y) {
         if (!b) {
@@ -67,9 +65,7 @@ i64 v;
     // 比较运算符
     friend bool operator==(const MODi64& a, const MODi64& b) { return a.v == b.v; }
     friend bool operator!=(const MODi64& a, const MODi64& b) { return a.v != b.v; }
-```
 
-```cpp
     // 快速幂
     static MODi64 pow(MODi64 a, long long e) {
         MODi64 r = 1;

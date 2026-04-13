@@ -1,6 +1,6 @@
-[[图论]]
+[[_图论]]
 
-计算有负权的全源最短路。复杂度$O\left(n⋅\left(n+m\right)⋅logn\right)$，可以看出它在稀疏图上比floyd优秀（$E≈V$复杂度约为$O\left(n^{2}⋅logn\right)$）（稠密图上则不如floyd）。
+计算有负权的全源最短路。复杂度$O\left(n⋅\left(n+m\right)⋅\log n\right)$，可以看出它**在稀疏图上比`floyd`优秀**（$E≈V$复杂度约为$O\left(n^{2}⋅\log n\right)$）（**稠密图上则不如`floyd`**）。
 ```cpp
 struct E{ // 原始边
     int u,v,w;
@@ -34,9 +34,7 @@ ec=ecn=0;
 }
     for(int v=1;v<=n;v++)
         add(0,v,0);
-```
 
-```cpp
     // 1 bellman-ford O(VE)
     for(int i=0;i<n;i++){
         for(int i=1;i<=ec;i++){
@@ -73,7 +71,7 @@ ec=ecn=0;
             }
         } 
         for(int v=1;v<=n;v++) // 4 还原
-            if(bst[s][v]!=INF) // wtf不加就错
+            if(bst[s][v]!=INF) // wtf不加就错?
                 bst[s][v]=bst[s][v]-h[s]+h[v];
 	}
 ```

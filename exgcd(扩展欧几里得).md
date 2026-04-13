@@ -1,7 +1,8 @@
-[[数论]]
+[[_数论]]
 
 扩展欧几里得算法$O\left(log\left(min\left(a,b\right)\right)\right)$
-注意，计算逆元时若模数不为质数，不能用费马，而只能用exgcd。
+用途：已知`a` `b`方程 $ax+by=gcd(a,b)$，求解一组`x` `y` （$gcd(a,b) \neq 1$时会有多解）
+注意，计算逆元时若模数不为质数，不能用费马，而只能用`exgcd`。
 ```cpp
 // 返回 gcd(a, b)，并求出 ax + by = gcd(a, b) 的一组解 (x, y)
 int exgcd(int a, int b, int &x, int &y) {
