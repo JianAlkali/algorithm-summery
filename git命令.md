@@ -26,11 +26,11 @@ git log --online
 ## `github`使用
 ```powershell
 # 好习惯先pull
-git pull origin master --rebase
+git pull origin main --rebase
 # 添加所有文件到暂存区
 git add .
 # 提交到本地仓库
 git commit -m "从夯到拉评价一下你的提交"
 # 推送到远程
-git push origin master
+git push origin main
 ```

@@ -212,11 +212,13 @@
   },
   "active": "75a0a95d6e8b1b7c",
   "lastOpenFiles": [
-    "__目录.md",
     "_杂项.md",
-    "git命令.md",
-    "_封装物.md",
+    "README.md",
+    "__目录.md",
     "新建 文本文档.txt",
+    "git命令.md",
+    "未命名.md",
+    "_封装物.md",
     "增量最短路动态计算er.md",
     "离散化er.md",
     "_图论.md",
@@ -237,8 +239,6 @@
     "AC自动机.md",
     "TSP.md",
     "Trie（字典树）.md",
-    "NTT快速数论变换.md",
-    "MODi64.md",
     "A算法模版（停止在此更新）.docx",
     "A算法模版.docx"
   ]
