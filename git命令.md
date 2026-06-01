@@ -25,6 +25,8 @@ git log --online
 
 ## `github`使用
 ```powershell
+# cd
+cd ******
 # 好习惯先pull
 git pull origin main --rebase
 # 添加所有文件到暂存区
